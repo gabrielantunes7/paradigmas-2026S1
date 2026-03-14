@@ -1,2 +1,8 @@
-# paradigmas-2026S1
-Repositório de atividades desenvolvidas na disciplina de Paradigmas de Programação (MC346) no primeiro semestre de 2026.
+# Projeto `CookLang`
+
+> |Nome  | RA |
+> |--|--|
+> | Gabriel Mattias Antunes  | 281199  |
+> | Nome2  | 123456  |
+> | Nome3  | 123456  |
+> | Nome4  | 123456  |
