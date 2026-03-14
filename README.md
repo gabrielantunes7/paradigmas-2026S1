@@ -3,6 +3,5 @@
 > |Nome  | RA |
 > |--|--|
 > | Gabriel Mattias Antunes  | 281199  |
-> | Nome2  | 123456  |
+> | Larissa Soares de Oliveira  | 250815  |
 > | Nome3  | 123456  |
-> | Nome4  | 123456  |
