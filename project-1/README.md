@@ -3,17 +3,26 @@
 ## Descrição Resumida da DSL
 
 ### Contextualização da linguagem
-Linguagem para produzir receitas de culinária. A ideia é que cada código da linguagem gere uma receita completa com ingredientes e passos.
- 
+
+A CookLang é uma linguagem específica de domínio (DSL) voltada para a descrição de receitas culinárias. A proposta é permitir que receitas sejam escritas de forma estruturada, organizando informações como ingredientes, quantidades, tempo de preparo e modo de execução.
+
+Cada código escrito na linguagem representa uma receita completa, contendo dados como número de porções, lista de ingredientes e passos de preparo. Dessa forma, as receitas deixam de ser apenas texto livre e passam a seguir um formato padronizado que pode ser interpretado tanto por pessoas quanto por sistemas computacionais.
+
 ### Motivação
-Vimos que a linguagem pode ser útil para padronizar e automatizar geração e leitura de receitas.
+
+Atualmente, receitas culinárias são compartilhadas em diversos formatos, como blogs, redes sociais e vídeos, normalmente sem uma estrutura padronizada. Isso pode dificultar a organização, a leitura e o reaproveitamento dessas informações.
+
+A motivação do projeto é criar uma linguagem que padronize a forma de escrever receitas, permitindo que elas sejam descritas de maneira clara e estruturada. Com isso, torna-se possível automatizar a geração, leitura e processamento dessas receitas por programas.
 
 ### Relevância
-Compartilhamento de receitas com mais facilidade e praticidade.
+
+Uma linguagem estruturada para receitas culinárias pode servir como base para sistemas que armazenem e compartilhem receitas de forma organizada. Por exemplo, a CookLang poderia ser utilizada em um banco de dados aberto de receitas, onde usuários adicionam novas receitas seguindo um formato padronizado.
+
+Isso facilita o compartilhamento, a busca e a organização das receitas, além de permitir integração com aplicações voltadas à culinária.
 
 ## Slides
 
-> Coloque aqui o link para o PDF da apresentação.
+[📄 Apresentação do Projeto (PDF)](project-1\slides\[MC346] Primeira Etapa - CookLang.pdf)
 
 ## Sintaxe da Linguagem na Forma de Tutorial
 
@@ -60,7 +69,9 @@ Letter -> a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r 
 ## Exemplos Selecionados
 
 ### Bolo de cenoura:
+
 Código em CookLang
+
 ```yaml
 recipe "bolo de cenoura" {
     servings: 8
@@ -87,6 +98,7 @@ recipe "bolo de cenoura" {
 ```
 
 Resultado
+
 ```text
 Receita: Bolo de Cenoura
 
@@ -123,7 +135,9 @@ Modo de Preparo
 ```
 
 ### Omelete:
+
 Código em CookLang
+
 ```yaml
 recipe "omelete simples" {
     servings: 1
@@ -145,6 +159,7 @@ recipe "omelete simples" {
 ```
 
 Resultado
+
 ```text
 Receita: Omelete Simples
 
