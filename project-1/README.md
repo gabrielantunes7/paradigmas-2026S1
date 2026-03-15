@@ -22,7 +22,9 @@ Isso facilita o compartilhamento, a busca e a organização das receitas, além 
 
 ## Slides
 
-[📄 Apresentação do Projeto (PDF)](project-1\slides\[MC346] Primeira Etapa - CookLang.pdf)
+A apresentação do projeto pode ser acessada aqui:
+
+[📄 Apresentação do Projeto (PDF)](slides/cooklang-slides.pdf)
 
 ## Sintaxe da Linguagem na Forma de Tutorial
 
