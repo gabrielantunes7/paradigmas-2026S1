@@ -39,16 +39,16 @@ Dentro de `steps`, temos uma lista de passos, instruções a serem seguidas para
 ## Gramática da Linguagem
 
 ```antlr
-S -> Recipe
-Recipe -> recipe String { Metadata IngredientsBlock StepsBlock }
+S -> Receita
+Receita -> receita WordList Metadata IngredientsBlock StepsBlock
 
-Metadata -> servings : Number time : Number TimeUnit
+Metadata -> porções : Number tempo : Number TimeUnit
 
-IngredientsBlock -> ingredients { IngredientsList }
+IngredientsBlock -> ingredientes IngredientsList
 IngredientsList -> Ingredient IngredientsList | #
 Ingredient -> Number Unit Word
 
-StepsBlock -> steps { StepsList }
+StepsBlock -> passos StepsList
 StepsList -> Step StepsList | #
 Step -> Number : Instruction
 Instruction -> InstructionWord InstructionTail
@@ -58,7 +58,6 @@ InstructionWord -> Word | Number  // previne instruções vazias
 Unit -> g | kg | ml | l | xicara | colher_cha | colher_sopa | unidade
 TimeUnit -> s | min | h
 
-String -> " WordList "
 WordList -> Word WordList | Word
 
 Number -> Digit Number | Digit
@@ -75,28 +74,25 @@ Letter -> a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r 
 Código em CookLang
 
 ```yaml
-recipe "bolo de cenoura" {
-    servings: 8
-    time: 50 min
+receita bolo de cenoura
+    porções: 8
+    tempo: 50 min
 
-    ingredients {
+    ingredientes
         3 unidade cenoura
         4 unidade ovo
         2 xicara farinha_trigo
         2 xicara acucar
         1 colher_cha fermento
         1 xicara oleo
-    }
 
-    steps {
+    passos
         1: descascar cenoura
         2: cortar cenoura
         3: bater cenoura ovo oleo
         4: misturar farinha_trigo acucar
         5: adicionar fermento
         6: assar 40 min
-    }
-}
 ```
 
 Resultado
@@ -141,23 +137,20 @@ Modo de Preparo
 Código em CookLang
 
 ```yaml
-recipe "omelete simples" {
-    servings: 1
-    time: 10 min
+receita omelete simples
+    porções: 1
+    tempo: 10 min
 
-    ingredients {
+    ingredientes
         2 unidade ovo
         1 colher_sopa manteiga
         1 pitada sal
-    }
 
-    steps {
+    passos
         1: quebrar ovo
         2: bater ovo sal
         3: aquecer manteiga
         4: fritar ovo
-    }
-}
 ```
 
 Resultado
