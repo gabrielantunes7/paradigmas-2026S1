@@ -104,8 +104,6 @@ Essas primitivas servirão para o interpretador realizar uma execução para che
 (define liquidificador (cria-recipiente 'liquidificador_master '()))
 (define tigela (cria-recipiente 'tigela_grande '()))
 
-(display "--- INICIANDO O PREPARO (EXECUÇÃO DOS STEPS) ---\n")
-
 ;; 3. Executando Passo: "bater cenoura ovo oleo"
 ;; Note que o interpretador exige pegar os itens da despensa primeiro (validação)
 (define etapa-1-liquidos
@@ -116,7 +114,6 @@ Essas primitivas servirão para o interpretador realizar uma execução para che
 
 ;; 4. Executando Passo: "misturar farinha_trigo acucar"
 ;; VAMOS FORÇAR UM ERRO! O açúcar não foi declarado na despensa ali em cima.
-
 (define etapa-2-erro (pegar-da-despensa 'acucar despensa-receita)) 
 
 ;; 5. Executando Passo (Corrigido apenas com farinha): "misturar liquidos com secos"
