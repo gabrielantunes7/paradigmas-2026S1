@@ -150,7 +150,7 @@ Estado final da receita computada:
 
 A apresentação do projeto pode ser acessada aqui:
 
-[Apresentação da Segunda Etapa(Figma)](https://www.figma.com/deck/xuG4SWiVr5eV3489TSuPEx)
+[Apresentação da Segunda Etapa (Figma)](https://www.figma.com/deck/xuG4SWiVr5eV3489TSuPEx)
 
 # Referências Bibliográficas
 
